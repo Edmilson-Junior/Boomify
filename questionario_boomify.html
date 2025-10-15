@@ -1,39 +1,219 @@
 <!DOCTYPE html>
-<html lang="pt-AO">
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boomify – Ideias que explodem resultados</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Questionário de Estratégia de Marketing Digital - Boomify</title>
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
+      background-color: #f7f8fc;
+      color: #333;
+      line-height: 1.6;
       margin: 0;
       padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
       background: #fff;
-      color: #222;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
-    header {
-      background: #000;
-      color: #fff;
+
+    h1 {
       text-align: center;
-      padding: 1.5rem 1rem;
+      color: #111;
     }
-    header .logo a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.8rem;
-      font-weight: 700;
-    }
-    .slogan { font-weight: 300; margin-top: .3rem; font-size: .9rem; }
-    section {
-      padding: 2rem 1rem;
-      text-align: center;
-    }
+
     h2 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
+      color: #0a58ca;
+      border-left: 4px solid #0a58ca;
+      padding-left: 8px;
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 1rem;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 8px;
+      background: linear-gradient(90deg, #0a58ca, #007bff);
+      color: #fff;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: linear-gradient(90deg, #084298, #0a58ca);
+    }
+
+    .brand {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #0a58ca;
+      letter-spacing: 1px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📊 Questionário de Estratégia de Marketing Digital</h1>
+    <p style="text-align:center;">Boomify</p>
+
+    <form action="https://formspree.io/f/your_form_id" method="POST">
+      
+      <h2>1️⃣ Informações Básicas</h2>
+      <label>1. Nome completo</label>
+      <input type="text" name="nome_completo" required>
+
+      <label>2. Nome da empresa ou marca</label>
+      <input type="text" name="empresa">
+
+      <label>3. Ramo de atividade</label>
+      <input type="text" name="ramo">
+
+      <label>4. Há quanto tempo o negócio existe?</label>
+      <input type="text" name="tempo_existencia">
+
+      <label>5. Onde o negócio atua (cidade, país, tipo de público)?</label>
+      <input type="text" name="atuacao">
+
+      <h2>2️⃣ Sobre o Negócio</h2>
+      <label>6. O que torna a tua empresa diferente?</label>
+      <textarea name="diferencial"></textarea>
+
+      <label>7. Principais produtos ou serviços oferecidos</label>
+      <textarea name="produtos_servicos"></textarea>
+
+      <label>8. Ticket médio por cliente</label>
+      <input type="text" name="ticket_medio">
+
+      <label>9. Loja física, online ou ambas?</label>
+      <input type="text" name="tipo_loja">
+
+      <label>10. Concorrentes principais</label>
+      <textarea name="concorrentes"></textarea>
+
+      <h2>3️⃣ Objetivos de Marketing</h2>
+      <label>11. Principal objetivo com marketing digital</label>
+      <select name="objetivo">
+        <option value="">Selecione...</option>
+        <option>Aumentar vendas</option>
+        <option>Ganhar visibilidade</option>
+        <option>Atrair novos clientes</option>
+        <option>Criar comunidade</option>
+        <option>Fortalecer a marca</option>
+      </select>
+
+      <label>12. Em quanto tempo esperas ver resultados?</label>
+      <select name="tempo_resultados">
+        <option>Curto prazo</option>
+        <option>Médio prazo</option>
+        <option>Longo prazo</option>
+      </select>
+
+      <label>13. Principais metas (ex: vender X por mês)</label>
+      <textarea name="metas"></textarea>
+
+      <label>14. Já fizeste campanhas de marketing antes? O que funcionou / não funcionou?</label>
+      <textarea name="campanhas_passadas"></textarea>
+
+      <h2>4️⃣ Público-Alvo</h2>
+      <label>15. Descreve o teu cliente ideal</label>
+      <textarea name="cliente_ideal"></textarea>
+
+      <label>16. Que problema resolves para o cliente?</label>
+      <textarea name="problema_cliente"></textarea>
+
+      <label>17. Onde o público costuma estar (redes, plataformas)</label>
+      <textarea name="locais_publico"></textarea>
+
+      <label>18. O que motiva o público a comprar?</label>
+      <textarea name="motivacao_compra"></textarea>
+
+      <h2>5️⃣ Comunicação e Marca</h2>
+      <label>19. Já tens identidade visual (logo, cores, fontes)?</label>
+      <input type="text" name="identidade_visual">
+
+      <label>20. Tom de comunicação desejado</label>
+      <select name="tom_comunicacao">
+        <option>Profissional</option>
+        <option>Divertido</option>
+        <option>Inspirador</option>
+        <option>Direto</option>
+      </select>
+
+      <label>21. Tipo de conteúdo desejado</label>
+      <input type="text" name="tipo_conteudo">
+
+      <label>22. Tens fotos e vídeos profissionais?</label>
+      <select name="midia_profissional">
+        <option>Sim</option>
+        <option>Não</option>
+      </select>
+
+      <h2>6️⃣ Recursos e Organização</h2>
+      <label>23. Tens orçamento para anúncios pagos? Quanto?</label>
+      <input type="text" name="orcamento">
+
+      <label>24. Quem aprova as campanhas?</label>
+      <input type="text" name="aprovador">
+
+      <label>25. Tens site, loja online ou landing page?</label>
+      <input type="text" name="site_loja">
+
+      <label>26. Ferramentas utilizadas atualmente</label>
+      <input type="text" name="ferramentas">
+
+      <label>27. Há algum evento, promoção ou lançamento em breve?</label>
+      <textarea name="eventos"></textarea>
+
+      <h2>7️⃣ Inspiração e Expectativas</h2>
+      <label>28. Que marcas te inspiram e por quê?</label>
+      <textarea name="inspiracoes"></textarea>
+
+      <label>29. Como imaginas o sucesso do teu negócio daqui a 6 meses?</label>
+      <textarea name="visao_futura"></textarea>
+
+      <label>30. Há algo mais que queiras partilhar?</label>
+      <textarea name="extras"></textarea>
+
+      <button type="submit">Enviar Respostas</button>
+    </form>
+
+    <p class="brand">Boomify © 2025</p>
+  </div>
+</body>
+</html>
     }
     p { line-height: 1.5; font-size: .95rem; }
     .btn, .btn-small {
