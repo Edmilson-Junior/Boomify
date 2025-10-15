@@ -6,34 +6,170 @@
   <title>Boomify – Ideias que explodem resultados</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #222;
+    }
+    header {
+      background: #000;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+    header .logo a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    .slogan { font-weight: 300; margin-top: .3rem; font-size: .9rem; }
+    section {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    p { line-height: 1.5; font-size: .95rem; }
+    .btn, .btn-small {
+      display: inline-block;
+      background: #ff4d00;
+      color: #fff;
+      padding: .8rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover, .btn-small:hover { background: #e64000; }
+    .services-grid, .portfolio-grid, .blog-grid, .benefits-grid, .testimonials-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .service-item, .portfolio-item, .blog-post, .benefit-item, .testimonial {
+      background: #f7f7f7;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .benefit-item img, .testimonial img {
+      width: 50px;
+      margin-bottom: .5rem;
+    }
+    .portfolio-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: .8rem;
+      margin: .5rem 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: .9rem;
+    }
+    footer {
+      background: #000;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      font-size: .85rem;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <h1 class="logo"><a href="#">Boomify</a></h1>
-      <p class="slogan">Ideias que explodem resultados</p>
-      <nav class="navbar">
-        <ul>
-          <li><a href="#services">Serviços</a></li>
-          <li><a href="#portfolio">Portfólio</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="login.html">Área do Cliente</a></li>
-          <li><a href="#orcamento">Orçamento</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1 class="logo"><a href="#">Boomify</a></h1>
+    <p class="slogan">Ideias que explodem resultados</p>
   </header>
 
   <section id="hero">
-    <div class="container hero-content">
-      <h2>Transforme sua presença digital</h2>
-      <p>Com criatividade e tecnologia para impulsionar seu negócio globalmente.</p>
-      <a href="#services" class="btn">Saiba Mais</a>
+    <h2>Transforme sua presença digital</h2>
+    <p>Com criatividade, estratégia e tecnologia para impulsionar o seu negócio globalmente.</p>
+    <a href="#benefits" class="btn">Descubra Como</a>
+  </section>
+
+  <section id="benefits">
+    <h2>Por que escolher a Boomify?</h2>
+    <div class="benefits-grid">
+      <div class="benefit-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" alt="">
+        <h3>Mais clientes</h3>
+        <p>Atraímos o público certo para o seu negócio usando estratégias validadas de funil digital.</p>
+      </div>
+      <div class="benefit-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="">
+        <h3>Autoridade de Marca</h3>
+        <p>Transforme a sua marca em uma referência através de branding emocional e campanhas criativas.</p>
+      </div>
+      <div class="benefit-item">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="">
+        <h3>Crescimento real</h3>
+        <p>Projetos com resultados mensuráveis e relatórios claros — sem promessas vazias.</p>
+      </div>
     </div>
   </section>
 
-  <section id="services">
+  <section id="proof">
+    <h2>O que dizem sobre nós</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="">
+        <p>"A Boomify elevou nossas vendas em 230% com uma estratégia simples, mas poderosa."</p>
+        <strong>— Carla Mendes, CEO da EcoTech</strong>
+      </div>
+      <div class="testimonial">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="">
+        <p>"Trabalhar com a Boomify foi um divisor de águas. Entregaram mais do que prometeram."</p>
+        <strong>— João Silva, Startup Wave</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="mission">
+    <h2>Nossa Missão</h2>
+    <p>Empoderar empresas a crescerem de forma sustentável, com ideias criativas que unem estratégia, dados e emoção.  
+    Acreditamos que cada negócio tem o potencial de ser global — nós apenas acendemos o pavio.</p>
+  </section>
+
+  <section id="articles">
+    <h2>Artigos que sustentam nossa proposta</h2>
+    <div class="blog-grid">
+      <div class="blog-post">
+        <h3>Marketing Emocional e o Poder da Conexão</h3>
+        <p>Estudos mostram que decisões de compra são 80% emocionais e apenas 20% racionais.</p>
+        <a href="https://hbr.org/2015/11/the-new-science-of-customer-emotions" class="btn-small" target="_blank">Ler Artigo</a>
+      </div>
+      <div class="blog-post">
+        <h3>Como o Design Impacta Resultados</h3>
+        <p>Design bem aplicado pode aumentar conversões em até 200%, segundo a Adobe Research.</p>
+        <a href="https://blog.adobe.com/en/publish/2023/04/12/design-impact-business" class="btn-small" target="_blank">Ver Pesquisa</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="guarantee">
+    <h2>Nossa Garantia</h2>
+    <p>Se em 30 dias você não notar progresso real, nós revisamos sua estratégia gratuitamente.  
+    Porque resultados explosivos só valem quando são verdadeiros.</p>
+  </section>
+
+  <section id="questionario">
+    <h2>Comece com uma estratégia gratuita</h2>
+    <p>Responda o questionário e receba um plano personalizado para o seu negócio.</p>
+    <a href="https://forms.gle/seuLinkDoQuestionario" class="btn">Responder Agora</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Boomify – Ideias que explodem resultados.</p>
+  </footer>
+</body>
+</html>
     <div class="container">
       <h2>Nossos Serviços</h2>
       <div class="services-grid">
